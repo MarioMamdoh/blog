@@ -1,0 +1,29 @@
+<header class="container bg-[--primary-color] text-white h-40 p-10">
+  <h2 class="mb-3 text-2xl">{{ categoryName }}</h2>
+  <p class="text-[9px]">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore,
+    temporibus.
+  </p>
+</header>
+<section class="mt-9">
+  <div
+    class="flex flex-wrap cards-container w-[1000px] justify-around m-auto max-lg:max-w-[700px] max-md:max-w-[400px] max-sm:max-w-[300px]"
+  >
+    @for(category of categoryPosts ; track category.id){
+
+    <div class="mb-3 card">
+      <app-post-card [postData]="category"></app-post-card>
+    </div>
+    }
+  </div>
+  <div class="w-full mt-5 text-center btn">
+    <button
+      class="bg-[--primary-color] text-[--secondary-color] mr-2 py-2 px-10 rounded-lg m-auto hover:bg-sky-700 transition-all"
+    >
+      LOAD MORE
+    </button>
+  </div>
+</section>
+<section>
+  <app-subscription-form></app-subscription-form>
+</section>

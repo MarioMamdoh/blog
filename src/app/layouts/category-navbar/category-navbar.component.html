@@ -1,0 +1,19 @@
+<nav
+  class="container fixed w-full mt-20 max-md:max-w-[320px] max-md:left-1/2 max-md:-translate-x-1/2 z-50"
+>
+  <div class="conatier-navbar bg-[--navbar-footer-color] py-3">
+    <div class="nav">
+      <ul class="flex flex-wrap justify-center">
+        @for(category of categorys ; track categorys.id){
+        <li>
+          <a
+            class="ml-3 uppercase text-[--primary-color]"
+            [routerLink]="['/category', category.data.category, category.id]"
+            >{{ category.data.category }}</a
+          >
+        </li>
+        }
+      </ul>
+    </div>
+  </div>
+</nav>

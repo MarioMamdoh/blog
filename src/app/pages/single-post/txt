@@ -1,0 +1,73 @@
+<header class="mb-5">
+  <img
+    src="https://images.pexels.com/photos/27837183/pexels-photo-27837183/free-photo-of-a-group-of-people-making-crafts-at-a-table.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    alt=""
+    class="w-full"
+  />
+</header>
+<section
+  class="grid grid-cols-3 max-lg:gap-36 max-md:gap-10 post-container max-lg:grid-cols-2"
+>
+  <div class="col-start-1 col-end-3 col-1 max-lg:col-end-2">
+    <div class="body-text-container">
+      <small class="text-red-700">Design</small>
+      <small class="ml-3 text-green-600">Featured</small>
+      <small class="ml-3 text-teal-300">Views - 100,256</small>
+      <small class="ml-3 font-bold text-yellow-400 updating-date">
+        LASt UPDATED -SEP 20,2024</small
+      >
+      <h1 class="my-3 text-3xl">
+        HOW TO START A BLOG IN 2024 EDITED NEW CATERGORY
+      </h1>
+      <p class="text-sm">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
+        consectetur dolore facilis, ullam officia consequuntur ipsum at. Esse,
+        ea! Quis cupiditate consequatur sit quo. Repellendus aut impedit
+        corporis vero accusamus? Nisi tenetur maxime nulla, dicta, voluptatum
+        praesentium eaque iste velit, veniam deserunt enim numquam illo commodi
+        natus possimus rem alias! Nulla deserunt nam amet qui quaerat, eius eos
+        dolore in. Aperiam voluptate repellendus distinctio omnis esse assumenda
+        autem quidem ex doloribus sit at laudantium maxime animi iste, ipsam,
+        dolorem, laboriosam officia libero nam voluptatem! Deserunt vel
+        repellendus magni dignissimos totam. Modi amet optio facere nostrum
+        ipsam quos expedita error repellendus deleniti, fugiat ipsa recusandae
+        eum fugit cupiditate voluptate adipisci doloribus velit eos voluptas.
+        Iste, inventore sunt ut nulla modi voluptatem? Iure enim labore tempora
+        quisquam mollitia, provident id blanditiis sed, corporis error nihil
+        inventore. Totam temporibus minima illo! Doloribus illo dignissimos
+        saepe rem exercitationem perspiciatis! Repellendus, vel! Reiciendis,
+        sapiente. Minus. Molestias consectetur assumenda a. Consectetur vel
+        libero sit ipsam ullam! Quo perferendis, nobis cum unde odit, possimus
+        iste sequi ipsam harum itaque corporis nihil alias sapiente blanditiis
+        dolorum nesciunt consectetur. Mollitia dicta ipsa itaque qui voluptates
+        fuga, laboriosam vel explicabo incidunt temporibus quos aperiam pariatur
+        accusamus quisquam ad? Exercitationem est dolorum eum enim
+        necessitatibus ducimus corrupti id quod nemo impedit. Repellat nisi
+        quisquam fugiat fuga facilis, recusandae eos blanditiis nesciunt aperiam
+        rerum molestias eveniet animi dignissimos error quos repellendus
+        distinctio maxime, est doloribus sit accusantium tempore. Molestiae
+        pariatur ullam minima. At quae neque nostrum quis cum possimus et totam
+        nemo temporibus in. Nesciunt placeat adipisci culpa facilis a earum
+        deserunt dicta, laborum aperiam commodi quam dolor officia sunt
+        repellendus eos? Qui vero officia sapiente nesciunt debitis, amet,
+        distinctio atque commodi rerum, itaque recusandae. Delectus reiciendis
+        eveniet beatae reprehenderit sunt, ipsam eos dolorum debitis consectetur
+        ad quibusdam ut, blanditiis placeat voluptatem?
+      </p>
+    </div>
+  </div>
+  <div class="col-start-3 col-2 max-lg:col-start-2 max-lg:justify-items-end">
+    <app-post-card></app-post-card>
+    <app-post-card></app-post-card>
+    <app-post-card></app-post-card>
+  </div>
+</section>
+<section class="my-8">
+  <app-comment-form></app-comment-form>
+</section>
+<section>
+  <app-comment-list></app-comment-list>
+</section>
+<section>
+  <app-subscription-form></app-subscription-form>
+</section>

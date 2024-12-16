@@ -1,0 +1,32 @@
+@if(postData){
+
+<div
+  class="card w-[300px] bg-[--navbar-footer-color] shadow-style mb-5 min-h-[550px] cursor-pointer"
+  [routerLink]="['/post', postData.id]"
+>
+  <div class="card-header">
+    <img [src]="postData.data.postImgPath" alt="" />
+  </div>
+  <div class="px-4 pb-1 my-2 card-body">
+    <div class="my-2 card-body-head">
+      <small class="text-red-700">{{ postData.data.category.data }}</small>
+      @if(postData.data.isFeatured){
+
+      <small class="ml-3 text-green-600">Featured</small>
+      }
+      <small class="ml-3 text-teal-300"
+        >Views - {{ postData.data.views }}</small
+      >
+    </div>
+    <h3 class="mb-2 text-2xl">
+      {{ postData.data.title }}
+    </h3>
+    <p class="leading-4 content-text text">
+      {{ postData.data.excerpt }}
+    </p>
+    <p class="mt-2 font-bold text-yellow-400 updating-date">
+      LASt UPDATED -{{ postData.data.createAt.toMillis() | date }}
+    </p>
+  </div>
+</div>
+}

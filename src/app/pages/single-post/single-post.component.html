@@ -1,0 +1,47 @@
+<header class="mb-5">
+  <img [src]="postData.postImgPath" class="w-full" />
+</header>
+
+<section class="flex justify-between gap-16 post-container">
+  <div class="">
+    <div class="body-text-container">
+      <small class="text-red-700">{{ postData.category.data }}</small>
+      @if(postData.isFeatured){
+
+      <small class="ml-3 text-green-600">Featured</small>
+      }
+      <small class="ml-3 text-teal-300">Views - {{ postData.views }}</small>
+      <small class="ml-3 font-bold text-yellow-400 updating-date">
+        LASt UPDATED -{{ postData.createAt.toMillis() | date }}</small
+      >
+      <h1 class="my-3 text-3xl">
+        {{ postData.category.data }}
+      </h1>
+      <p class="text-sm" [innerHTML]="postData.content"></p>
+    </div>
+    <div
+      class="hidden w-full mt-4 max-sm:flex max-sm:flex-col max-sm:items-center"
+    >
+      @for(post of postSimilar ; track post.id){
+
+      <app-post-card [postData]="post"></app-post-card>
+      }
+    </div>
+    <section class="my-8">
+      <app-comment-form></app-comment-form>
+    </section>
+    <section>
+      <app-comment-list></app-comment-list>
+    </section>
+  </div>
+  <div class="max-sm:hidden">
+    @for(post of postSimilar ; track post.id){
+
+    <app-post-card [postData]="post"></app-post-card>
+    }
+  </div>
+</section>
+
+<section>
+  <app-subscription-form></app-subscription-form>
+</section>

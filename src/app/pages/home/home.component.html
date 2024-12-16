@@ -1,0 +1,32 @@
+<section class="featured-container bg-[--primary-color] pt-2 my-2">
+  <div class="my-6 text-center text-white section-heading">
+    <h3 class="mb-1 text-2xl">Featured Posts</h3>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+  </div>
+  <div class="flex flex-wrap gap-3 px-5 max-lg:justify-center posts-container">
+    @for(post of postsData ; track post.id){
+    <div class="card">
+      <app-post-card [postData]="post"></app-post-card>
+    </div>
+    }
+  </div>
+</section>
+<section class="last-post-container">
+  <div class="my-6 text-center section-heading">
+    <h3 class="mb-1 text-2xl">Last Posts</h3>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+  </div>
+  <div
+    class="flex flex-wrap cards-container w-[1000px] justify-around m-auto max-lg:max-w-[700px] max-md:max-w-[400px] max-sm:max-w-[300px]"
+  >
+    @for(post of lastestPost ; track post.id){
+
+    <div class="mb-3 card">
+      <app-post-card [postData]="post"></app-post-card>
+    </div>
+    }
+  </div>
+</section>
+<section>
+  <app-subscription-form></app-subscription-form>
+</section>
